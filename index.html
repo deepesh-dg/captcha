@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <section id="registration">
+            <div class="container">
+                <div class="title">
+                    <img src="images/signup-image.png" alt="User" class="img-fluid" />
+                </div>
+
+                <h4>Create an account to get started.</h4>
+
+                <form id="registration-form" action="" method="post" autocomplete="off">
+                    <div class="form-group">
+                        <label for="fullname">Fullname</label>
+                        <input
+                            type="text"
+                            class="form-control input-validation"
+                            name="fullname"
+                            id="fullname"
+                            value=""
+                            autocomplete="fullname"
+                        />
+                        <p class="error"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input
+                            type="text"
+                            name="email"
+                            id="email"
+                            class="form-control input-validation"
+                            value=""
+                            autocomplete="email"
+                        />
+                        <p class="error"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input
+                            type="password"
+                            name="password"
+                            id="password"
+                            class="form-control input-validation"
+                            value=""
+                            autocomplete="current-password"
+                        />
+                        <p class="error"></p>
+                    </div>
+
+                    <div class="form-group captchaContainer">
+                        <div class="canvas">
+                            <canvas id="captcha"></canvas>
+                            <div class="refreshBtn" id="refreshBtn">
+                                <img src="./images/refresh.png" alt="refresh-captcha" />
+                            </div>
+                        </div>
+                        <div class="">
+                            <label for="captchaInput">Captcha</label>
+                            <input type="text" name="captcha" id="captchaInput" class="form-control input-validation" />
+                            <p class="error"></p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary w-100">Register Now</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <script src="js/style.js"></script>
+    </body>
+</html>
